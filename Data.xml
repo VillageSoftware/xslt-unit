@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- In production, we use the actual XSLT -->
+<!-- <?xml-stylesheet type="text/xsl" href="ExampleLogic.xslt"?> -->
+
+<!-- To test, we use the unit tests XSLT -->
+<?xml-stylesheet type="text/xsl" href="MyTests.xslt"?>
+
+<!-- Here's our example data -->
+<task>
+	<task_name>World Domination</task_name>
+	<uk_time_started>24/04/2015 07:22:00</uk_time_started>
+	<total_volume>125000</total_volume>
+	<meters_width>1.5784265</meters_width>
+	<resources>
+		<resource name="Wolves">8</resource>
+		<resource name="Safety pins">36</resource>
+		<resource name="Fairy lights">180</resource>
+	</resources>
+</task>
