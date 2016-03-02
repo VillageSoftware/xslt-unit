@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<!-- In production, we use the actual XSLT -->
+<!-- <?xml-stylesheet type="text/xsl" href="PressWorkTicket.xslt"?> -->
+
+<!-- To test, we use the unit tests XSLT -->
+<?xml-stylesheet type="text/xsl" href="MyTests.xslt"?>
+
+<!--
+***************************************************************
+This is based on Technique MIS Order xml,  
+showing how an XML fragment can be tested
+***************************************************************
+-->
+<order>
+	<job_bag_ready>True</job_bag_ready>
+	<order_no>4036</order_no>
+	<job_no>AB2111213</job_no>
+	<cust_name>A. Customer</cust_name>
+	<job_status>Await Start</job_status>
+	<!-- Illustrates an order fragment for a particular test case.
+	In this example it is mow_press_delivery/task_folio 
+	-->
+	<mow_folio_should_be_continuous>
+		<press_mow>
+			<mow_section_id>2</mow_section_id>
+			<mow_pagination>60</mow_pagination>
+			<mow_press_id>13</mow_press_id>
+			<mow_press_name>L2</mow_press_name>
+			<mow_plan_start>27/03/2014 00:26:00</mow_plan_start>
+			<mow_cutoff_cyl_circum>960</mow_cutoff_cyl_circum>
+			<mow_opt_cyl_circum>960</mow_opt_cyl_circum>
+			<mow_description>60pp 4e2u [L] PR</mow_description>
+			<mow_no_of_ribbons>15</mow_no_of_ribbons>
+			<mow_no_of_engravings>4</mow_no_of_engravings>
+			<mow_no_of_sets>2</mow_no_of_sets>
+			<task_knock_to>Head</task_knock_to>
+			<task_head_trim>3</task_head_trim>
+			<task_foot_trim>3</task_foot_trim>
+			<task_fore_edge_trim>3</task_fore_edge_trim>
+			<task_binding_lap>10</task_binding_lap>
+			<task_binding_lap_folio>High</task_binding_lap_folio>
+			<mow_task_id>164472</mow_task_id>
+			<mow_issue_id>0</mow_issue_id>
+			<mow_outwork>False</mow_outwork>
+			<mow_press_delivery>
+				<component_id>2</component_id>
+				<sig_id>002</sig_id>
+				<sig_pagination>60</sig_pagination>
+				<sequence_id>2</sequence_id>
+				<sig_sequence_alpha>B</sig_sequence_alpha>
+				<sig_trim_size>282 x 232</sig_trim_size>
+				<task_id>164472</task_id>
+				<task_version_id>COMM</task_version_id>
+				<task_version_description>Common</task_version_description>
+				<task_description>60pp Text [L]</task_description>
+				<task_folio>1-28, 29-56</task_folio>
+				<task_nett_qty>306083</task_nett_qty>
+				<task_gross_qty>336279</task_gross_qty>
+				<task_number_up>2</task_number_up>
+				<task_impo_scheme/>
+				<task_impressions>168139.5</task_impressions>
+				<task_plates_changes>0</task_plates_changes>
+				<task_plates_string>4/4</task_plates_string>
+				<task_partref>4036-002</task_partref>
+				<task_version_run>1</task_version_run>
+				<task_finstyle>XF</task_finstyle>
+				<task_finstyle_desc>Press Finished Not Stitched</task_finstyle_desc>
+			</mow_press_delivery>
+		</press_mow>
+	</mow_folio_should_be_continuous>
+</order>

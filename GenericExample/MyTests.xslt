@@ -3,8 +3,7 @@
 	version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-	exclude-result-prefixes="msxsl"
->
+	exclude-result-prefixes="msxsl">
 
 	<!-- Don't change these bits -->
 	<!-- Output as HTML -->
@@ -15,7 +14,7 @@
 		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
 
 	<!-- Include the unit testing tools -->
-	<xsl:include href="unitTestHelper.xslt"/>
+	<xsl:include href="../lib/unitTestHelper.xslt"/>
 
 	<!-- ==== CONFIGURE THESE BITS ==== -->
 	<!-- Include the XSLT files which contain the logic you want to test -->

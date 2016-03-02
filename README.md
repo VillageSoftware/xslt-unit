@@ -2,6 +2,19 @@
 
 Standalone unit testing for XSLT, written in XSLT.
 
+Two examples are included here. [GenericExample][GE] is the simplest demonstration and should be considered authoritative.  [TechniqueExample][TE] shows how the tools might be used on reports for data produced by [Technique-MIS][TMIS], the printing industry software.
+
+[GE]: ./GenericExample
+[TE]: ./TechniqueExample
+[TMIS]: http://www.technique-mis.com/
+
+## Browsers
+
+To use Firefox, you'll need to allow it to open relative directories in XSL files.
+
+ * Go to `about:config`
+ * Set `security.fileuri.strict_origin_policy` to `false`
+
 ## Setup
 
 You have your source data, `Data.xml` which you would normally transform with `BusinessLogic.xslt` either by including it as an `xml-stylesheet` or by processing it with a tool like Technique. Your `BusinessLogic.xslt` may pull in other xsl files which it uses.
